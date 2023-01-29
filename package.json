@@ -2,6 +2,7 @@
   "name": "about-me",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://a685288.github.io/About-Me/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
