@@ -1,3 +1,10 @@
 module.exports = {
-  publicPath: '/About-Me/'
+  publicPath: '/About-Me/',
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: '@import "@/assets/sass/_variables.sass";'
+      }
+    }
+  },
 }
