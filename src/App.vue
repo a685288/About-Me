@@ -1,18 +1,23 @@
 <template>
   <div id="app">
+    <Header />
     <router-view/>
   </div>
 </template>
 <script>
-import '@/assets/sass/_variables.sass'
-
+import Header from '@/components/Header'
 export default {
   name: 'app',
+  components: {
+    Header
+  }
 
 }
 </script>
 
 <style lang="sass">
+@import '@/assets/sass/_variables.sass'
+@import '@/assets/sass/reset.scss'
 #app
   font-family: Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
