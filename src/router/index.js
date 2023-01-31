@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import index from '../views/index.vue'
+import Index from '../views/Index.vue'
+import Skill from '../views/Skill.vue'
+import Experience from '../views/Experience.vue'
 
 const routes = [
   {
     path: '/',
     name: '',
-    component: index
+    component: Index
+  },
+  {
+    path: '/Skill',
+    name: 'Skill',
+    component: Skill
+  },
+  {
+    path: '/Experience',
+    name: 'Experience',
+    component: Experience
   },
 ]
 
