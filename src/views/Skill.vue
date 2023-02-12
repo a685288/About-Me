@@ -89,11 +89,16 @@ export default {
     .level
       display: flex
       margin-left: 100px
+      @include pad
+        width: 200px
+        margin-left: 120px
       > div
         flex: 1
         text-align: right
         color: $secondaryColor
         font-weight: bold
+        @include pad
+          writing-mode: vertical-rl
     .skill
       display: flex
       margin: 20px 0
@@ -101,12 +106,16 @@ export default {
       .name
         min-width: 100px
         text-align: left
+        @include pad
+          margin-left: 20px
       .progress 
         height: 20px
         width: 400px
         border-radius: 20px
         border: 3px solid $bgColor
         padding: 2px
+        @include pad
+          width: 200px
         .progress-bar
           height: 100%
           border-radius: 20px
@@ -132,9 +141,8 @@ export default {
     margin: 20px auto
   .info
     text-align: left
-    width: 600px
     margin: 0 auto
-    padding: 20px
+    padding: 20px 10px 20px 40px
     line-height: 26px
     li
       list-style-type: disc

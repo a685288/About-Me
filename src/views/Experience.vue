@@ -50,14 +50,21 @@ export default {
     box-shadow: 10px 10px 0px $bgColor
     color: $lightFontColor
     border-radius: 10px
+    flex-wrap: wrap
     .left
-      flex: auto
+      flex: 1
+      min-width: 200px
       .title
         font-size: 34px
         font-weight: bold
+        @include pad
+          font-size: 26px
       .subTitle
         font-size: 18px
     .right
       font-weight: bold
       padding-left: 20px
+      @include pad
+        padding-left: 0
+        padding-top: 20px
 </style>

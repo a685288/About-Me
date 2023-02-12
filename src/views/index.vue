@@ -31,12 +31,12 @@ export default {
 <style lang="sass">
 #index
 	.content
-		background-color: $subColor
-		width: 30vw
 		min-height: calc( 100vh - 148px )
-		height: 500px
 		display: flex
+		flex-wrap: wrap
 		align-items: center
+		@include pad
+			width: 100vw
 		.card
 			background-color: #EBE3DB
 			width: 300px
@@ -44,6 +44,11 @@ export default {
 			box-shadow: 0 1px 4px rgba(0,0,0,.6)
 			position: relative
 			left: 20vw
+			border-radius: 10px
+			margin: 30px
+			@include pad
+				margin: 30px auto
+				left: 0
 			img
 				margin: 40px
 				width: 160px
@@ -63,9 +68,14 @@ export default {
 		.info
 			position: relative
 			left: 26vw
-			min-width: 600px
 			text-align: left
 			line-height: 28px
+			width: 400px
+			@include pad
+				width: 300px
+				left: 0
+				padding: 40px
 			li
 				list-style-type: disc
+
 </style>

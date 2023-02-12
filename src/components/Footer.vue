@@ -15,17 +15,21 @@ export default {
 <style lang="sass">
 #footer
   background-color: $secondaryColor
-  padding: 20px 100px
+  padding: 20px 10%
   color: $lightFontColor
   display: flex
+  flex-wrap: wrap
   text-align: left
-  max-height: 52px
+  min-height: 52px
   z-index: 2000
   .way
     flex: auto
+    min-width: 160px
     .item
       padding: 5px
   .statement
+    min-width: 160px
     align-self: self-end
     font-weight: bold
+    margin-top: 20px
 </style>
