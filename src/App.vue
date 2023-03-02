@@ -9,7 +9,7 @@
       此網頁使用 Vue cli 建置<br>
       主要語法：Vue2<br>
       其中所有版面皆為手刻，沒有使用外部 UI 庫<br>
-      有實做RWD
+      並且同步實做 RWD
       <template v-slot:confirm>我知道了！</template>
       <template v-slot:cancel>關閉</template>
     </Popup>

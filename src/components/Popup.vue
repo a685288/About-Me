@@ -59,7 +59,7 @@ export default {
 		position: relative 
 		width: 90% 
 		max-width: 400px 
-		margin: 20% auto 
+		margin: 10em auto 
 		background: $bgColor
 		border-radius: .25em .25em .4em .4em 
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) 

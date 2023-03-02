@@ -16,12 +16,12 @@ export default {
       data: [
         {
           title: '今網智慧科技股份有限公司',
-          subTitle: '前端工程師（大四實習後轉正）',
-          time: '2021.01 - Present'
+          subTitle: '前端工程師（大四下實習後轉正）',
+          time: '2021.01 - 2023.02'
         },
         {
           title: '樂衍有限公司',
-          subTitle: '前端工程師（大四實習）',
+          subTitle: '前端工程師（大四上實習）',
           time: '2020.09 - 2021.01'
         },
         {
@@ -37,7 +37,7 @@ export default {
 <style lang="sass">
 #experience
   min-height: calc( 100vh - 148px )
-  padding-top: 40px
+  padding: 40px 0
   box-sizing: border-box
   .card
     padding: 20px

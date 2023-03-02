@@ -2,11 +2,11 @@
 	<div id="skill">
     <div class="group">
       <div class="level">
-        <div class="level-1">剛接觸</div>
+        <div>剛接觸</div>
         <div class="dot">•</div>
         <div class="dot">•</div>
         <div class="dot">•</div>
-        <div class="level-5">精通</div>
+        <div>精通</div>
       </div>
       <div v-for="(item, index) in skill" :key="index" class="skill">
         <div class="name">{{ item.name }}</div>
@@ -33,19 +33,19 @@ export default {
         },
         {
           name: 'CSS',
-          degree: '5'
+          degree: '4'
         },
         {
           name: 'JavaScript',
-          degree: '4'
+          degree: '5'
         },
         {
           name: 'JQuery',
           degree: '3'
         },
         {
-          name: 'Vue',
-          degree: '4'
+          name: 'Vue2',
+          degree: '5'
         },
         {
           name: 'Bootstrap',
@@ -66,7 +66,6 @@ export default {
       ],
       info: [
         '擁有 3 年以上 Vue 開發經驗',
-        '擁有 3 年以上 Vue 開發經驗',
         '精通 Html5、CSS3、JavaScript、jQuery、Bootstrap、RWD，可獨立完成切版',
         '熟悉 Cordova、Framework7，開發 Android、iOS App',
         '精通 SCSS、Sass，善用變數 Variables、模組化（Import、Extend、Mixin、Functions）開發及維護',
@@ -84,14 +83,15 @@ export default {
 #skill
   min-height: calc( 100vh - 148px )
   .group
-    width: 500px
+    max-width: 800px
+    width: 80%
     margin: 40px auto
     .level
       display: flex
+      width: 80%
       margin-left: 100px
-      @include pad
-        width: 200px
-        margin-left: 120px
+      @include mobile
+        width: auto
       > div
         flex: 1
         text-align: right
@@ -110,12 +110,12 @@ export default {
           margin-left: 20px
       .progress 
         height: 20px
-        width: 400px
+        width: 80%
         border-radius: 20px
         border: 3px solid $bgColor
         padding: 2px
         @include pad
-          width: 200px
+          // width: 200px
         .progress-bar
           height: 100%
           border-radius: 20px
@@ -140,6 +140,7 @@ export default {
     width: 40px
     margin: 20px auto
   .info
+    max-width: 700px
     text-align: left
     margin: 0 auto
     padding: 20px 10px 20px 40px
