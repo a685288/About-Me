@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from '../views/Index.vue'
+import Index from '../views/index.vue'
 import Skill from '../views/Skill.vue'
 import Experience from '../views/Experience.vue'
 
