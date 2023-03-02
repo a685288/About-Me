@@ -4,7 +4,10 @@
       <div class="item">0981-685288</div>
       <div class="item">a685288@gmail.com</div>
     </div>
-    <div class="statement">© 2023 by Pei Ying.</div>
+    <div class="way right">
+      <div class="item">最後更新時間 2023/03/02</div>
+      <div class="item">© 2023 by Pei Ying.</div>
+    </div>
   </div>
 </template>
 <script>
@@ -24,12 +27,11 @@ export default {
   z-index: 2000
   .way
     flex: auto
-    min-width: 160px
+    min-width: 170px
     .item
       padding: 5px
-  .statement
-    min-width: 160px
-    align-self: self-end
-    font-weight: bold
-    margin-top: 20px
+    &.right
+      text-align: right
+      @include mobile
+        text-align: left
 </style>
