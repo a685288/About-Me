@@ -2,7 +2,7 @@
 	<div id="footer">
     <div class="way">
       <div class="item">0981-685288</div>
-      <div class="item">a685288@gmail.com</div>
+      <div class="item">peiying8858@gmail.com</div>
     </div>
     <div class="way right">
       <div class="item">最後更新時間 2023/03/02</div>
@@ -32,6 +32,5 @@ export default {
       padding: 5px
     &.right
       text-align: right
-      @include mobile
         text-align: left
 </style>

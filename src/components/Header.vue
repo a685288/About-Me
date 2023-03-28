@@ -3,7 +3,8 @@
     <div class="left"></div>
     <div class="right">
       <div v-for="(item, index) in menu" :key="index" class="item">
-        <router-link :to="item.path">{{ item.name }}</router-link>
+        <a :href="item.path">{{ item.name }}</a>
+        <!-- <router-link :to="item.path">{{ item.name }}</router-link> -->
       </div>
     </div>
   </div>
@@ -14,16 +15,24 @@ export default {
     return{
       menu: [
         {
-          name: '首頁',
-          path: '/'
+          name: 'Home',
+          path: '#page1'
         },
         {
-          name: '專業技能',
-          path: 'skill'
+          name: 'About Me',
+          path: '#page2'
         },
         {
-          name: '經歷',
-          path: 'experience'
+          name: 'Skills',
+          path: '#page3'
+        },
+        {
+          name: 'Experience',
+          path: '#page4'
+        },
+        {
+          name: 'Education',
+          path: '#page5'
         }
       ]
     }
@@ -36,23 +45,25 @@ export default {
 </script>
 <style lang="sass">
 #header
-  background-color: $bgColor
+  width: 100vw
+  height: 50px
   display: flex
-  position: sticky
+  position: fixed
   top: 0
   left: 0
-  max-height: 56px
   z-index: 2001
   padding: 0 10px
+  box-sizing: border-box
+  background-color: #D1C7B590
   .left
     flex: auto
   .right
     display: flex
     .item
+      font-weight: bold
       margin: 20px
       a
         color: $mainFontColor
         &:hover
           color: $subColor
-          font-weight: bold
 </style>
