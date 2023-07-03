@@ -6,7 +6,6 @@
 <script>
 import '@/assets/sass/_variables.sass'
 
-
 export default {
   name: 'app',
 
